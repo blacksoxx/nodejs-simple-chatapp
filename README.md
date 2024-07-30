@@ -17,6 +17,7 @@ To run this project, you need to have the following installed:
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
 - [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- [Docker](https://www.docker.com/) (if you want to run the application in a container)
 
 ## Installation
 
@@ -43,6 +44,13 @@ To start the chat application, run the following command:
 
 ```bash
 node index.js
-
+```
 ## Running Container
-
+```bash
+docker build -t simple-chat-app .
+docker run -p 3000:3000 simple-chat-app
+```
+## Usage
+1. Open your web browser and go to http://localhost:3000.
+2. Enter a username and join the chat room.
+3. Start sending messages and enjoy real-time chat with other users!
